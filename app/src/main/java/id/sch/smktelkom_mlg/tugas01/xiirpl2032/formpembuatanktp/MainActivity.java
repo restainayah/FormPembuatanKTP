@@ -60,11 +60,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void doProcess() {
+        if (isValid()) {
         nama = etNama.getText().toString();
         ttl = etTTL.getText().toString();
         pekerjaan = etPekerjaan.getText().toString();
         alamat = etAlamat.getText().toString();
-
+        }
+            
         String hasil = "Permohonan KTP : ";
         int startlen = hasil.length();
         if (cbB.isChecked()) hasil += cbB.getText().toString() + "\n";
@@ -106,5 +108,44 @@ public class MainActivity extends AppCompatActivity {
                 "Jenis Kelamin : " + hsll + "\n");
 
 
+    }
+
+    private boolean isValid() {
+        boolean valid = true;
+
+        String nama = etNama.getText().toString();
+        String ttl = etTTL.getText().toString();
+        String pekerjaan = etPekerjaan.getText().toString();
+        String alamat = etAlamat.getText().toString();
+
+        if (nama.isEmpty()) {
+            etNama.setError("Nama Belum Diisi");
+            valid = true;
+        } else {
+            etNama.setError(null);
+        }
+
+        if (ttl.isEmpty()) {
+            etTTL.setError("Tempat, Tanggal Lahir Belum Diisi");
+            valid = true;
+        } else {
+            etTTL.setError(null);
+        }
+
+        if (pekerjaan.isEmpty()) {
+            etPekerjaan.setError("Pekerjaan Belum Diisi");
+            valid = true;
+        } else {
+            etPekerjaan.setError(null);
+        }
+
+        if (alamat.isEmpty()) {
+            etAlamat.setError("Alamat Belum Diisi");
+            valid = true;
+        } else {
+            etAlamat.setError(null);
+        }
+
+        return valid;
     }
 }
