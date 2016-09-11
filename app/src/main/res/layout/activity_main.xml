@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl2032.formpembuatanktp.MainActivity">
+
+        <TextView
+            android:id="@+id/textViewKTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permohonan KTP" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baru" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPerpanjangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perpanjangan" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPergantian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pergantian" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextTTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat, Tanggal Lahir" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menikah" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Menikah" />
+
+            <RadioButton
+                android:id="@+id/radioButtonJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Janda" />
+
+            <RadioButton
+                android:id="@+id/radioButtonD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duda" />
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextPekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Alamat"
+                android:inputType="textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama" />
+
+        <Spinner
+            android:id="@+id/spinnerAgama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/agama" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Laki - Laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="Hasil" />
+
+    </LinearLayout>
+</ScrollView>
