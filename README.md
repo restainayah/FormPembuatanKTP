@@ -4,10 +4,10 @@
 2. dengan adanya aplikasi ini, petugas pembuat ktp tidak perlu bersusah payah untuk mencatat data penduduk di buku tulis, cukup dengam membuat aplikasi ini data penduduk sudah bisa terakses
 3. kebanyakan sekarang penduduk yang ingin membuat ktp sangat sulit dikarenakan pengisian data yang rumit, dengan adanya aplikasi ini diharapkan membuat ktp atau memperpanjangnya adalah hal yang mudah untuk dilakukan
 
-![Screenshoot 1](/Pictures/sc1.jpg)
-![Screenshoot 2](/Pictures/sc2.jpg)
-![Screenshoot 3](/Pictures/sc3.jpg)
-![Screenshoot 4](/Pictures/sc4.jpg)
+![Screenshoot 1](/Images/sc1.jpg)
+![Screenshoot 2](/Images/sc2.jpg)
+![Screenshoot 3](/Images/sc3.jpg)
+![Screenshoot 4](/Images/sc4.jpg)
 
 https://drive.google.com/open?id=0B7EEy6x3lec1Qkw1ZXhHZ0p5SHM
 
