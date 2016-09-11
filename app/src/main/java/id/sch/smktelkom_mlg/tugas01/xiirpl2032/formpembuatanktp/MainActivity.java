@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etNama, etTTL, etPekerjaan, etAlamat;
     Button bOk;
-    String nama, ttl, pekerjaan, alamat, hasil;
+    String nama, ttl, pekerjaan, alamat;
     TextView tvHasil;
     CheckBox cbB, cbPP, cbPG;
     //RadioButton rbM, rbBM, rbJ,rbD;
@@ -65,9 +65,13 @@ public class MainActivity extends AppCompatActivity {
         pekerjaan = etPekerjaan.getText().toString();
         alamat = etAlamat.getText().toString();
 
+        String hasil = "Permohonan KTP : ";
+        int startlen = hasil.length();
         if (cbB.isChecked()) hasil += cbB.getText().toString() + "\n";
         if (cbPP.isChecked()) hasil += cbPP.getText().toString() + "\n";
         if (cbPG.isChecked()) hasil += cbPG.getText().toString() + "\n";
+
+        if (hasil.length() == startlen) hasil += "Tidak ada pada Pilihan";
 
         String hsl = null;
 
